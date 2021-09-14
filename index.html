@@ -84,7 +84,6 @@
       function handleProductChange(product, isIncrease) {
          const productInput = document.getElementById(product + '-count');
          const productCount = parseInt(productInput.value);
-         // const caseNewCount = caseCount - 1;
          let productNewCount = productCount;
          if (isIncrease == true  ){
             productNewCount = productCount + 1;
@@ -94,7 +93,6 @@
          } 
 
          productInput.value = productNewCount;
-         // const caseTotal = caseNewCount * 59;
          let productTotal = 0;
          if(product == 'phone'){
             productTotal = productNewCount * 1219;
